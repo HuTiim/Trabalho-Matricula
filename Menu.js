@@ -1,6 +1,8 @@
 const SENSACHOCRIVEL=require ('readline-sync').question;
 
 function menu() {
+    while (menu) {
+    
     console.log("1 -Cadastrar Aluno-")
     console.log("2-Listar Todos os Alunos-")
     console.log("3-Listar Aluno em Especifico-")
@@ -30,16 +32,10 @@ let n=(parseInt(SENSACHOCRIVEL("Digitie o que deseja:")))
         return n
       }
       else if(n==0){
+        break
       }
       else{
-        console.log("1 -Cadastrar Aluno-")
-        console.log("2-Listar Todos os Alunos-")
-        console.log("3-Listar Aluno em Especifico-")
-        console.log("4-Atualizar Aluno-")
-        console.log("5-Excluir Aluno-")
-        console.log("6-Media-")
-        console.log("0-Sair")
-        let n=(parseInt(SENSACHOCRIVEL("Digitie o que deseja:")))  
       }       
+}
 }
 menu()
