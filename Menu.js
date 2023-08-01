@@ -39,6 +39,7 @@ let n=(parseInt(SENSACHOCRIVEL("Digitie o que deseja:")))
         console.log("5-Excluir Aluno-")
         console.log("6-Media-")
         console.log("0-Sair")
+        let n=(parseInt(SENSACHOCRIVEL("Digitie o que deseja:")))  
       }       
 }
 menu()
