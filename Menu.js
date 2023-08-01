@@ -11,7 +11,7 @@ function menu() {
     console.log("6-Media-")
     console.log("0-Sair")
 
-let n=(parseInt(SENSACHOCRIVEL("Digitie o que deseja:")))    
+let n=(parseInt(SENSACHOCRIVEL("Digite o que deseja:")))    
 
     if (n==1) {
         return n
