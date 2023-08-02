@@ -1,7 +1,7 @@
 const SENSACHOCRIVEL=require ('readline-sync').question;
 
 function menu() {
-    while (menu) {
+    while (true) {
     
     console.log("1 -Cadastrar Aluno-")
     console.log("2-Listar Todos os Alunos-")

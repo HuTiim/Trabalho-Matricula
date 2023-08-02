@@ -1,27 +1,39 @@
 const SENSACHOCRIVELWRITE= require("fs").writeFileSync
-
-
+const SENSACHOCRIVELREAD= require("fs").readFileSync
 const SENSACHOCRIVEL=require ('readline-sync').question;
 
-let i=1
-
 function Cadastrar() {
+let I=1
+
     while(true){
         Nome=SENSACHOCRIVEL("Nome:")
         Matricula=SENSACHOCRIVEL("Matricula:")
         parseInt(Idade=SENSACHOCRIVEL("Idade:"))
         parseInt(Nota=SENSACHOCRIVEL("Nota:"))
+        
+        let imp=SENSACHOCRIVELREAD("BancoDeDados.csv",{encoding: "utf-8"})
 
-        let registro=([`${i};${Nome};${Matricula};${Idade};${Nota}`])    
-        let texto=registro+"\n"
+        res=imp.split("\n")
+        const arr =res
+        const ultimo = arr[arr. length - 1]
+    
+        if (i=="") {
+            I=I+1
+        }
+        i=parseInt(ultimo[0])
+        I=i+1
+
+        let registro=([`${I};${Nome};${Matricula};${Idade};${Nota}`])    
+        let texto="\n"+registro
+
         SENSACHOCRIVELWRITE("BancoDeDados.csv",texto.toString(),{flag:"a"})
-        i++
 
         n=parseInt(SENSACHOCRIVEL("1 p/ Novo Cadastro 2 p/parar:"))
-
+        
         if (n!=1) {
-                break        
-            }    
+            break
+        }
+        I++
     }
 }
 Cadastrar()
