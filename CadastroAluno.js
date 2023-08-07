@@ -3,9 +3,8 @@ const SENSACHOCRIVELREAD= require("fs").readFileSync
 const SENSACHOCRIVEL=require ('readline-sync').question;
 
 function Cadastrar() {
-let I=1
-
     while(true){
+        let I=1
         Nome=SENSACHOCRIVEL("Nome:")
         Matricula=SENSACHOCRIVEL("Matricula:")
         parseInt(Idade=SENSACHOCRIVEL("Idade:"))
@@ -15,13 +14,15 @@ let I=1
 
         res=imp.split("\n")
         const arr =res
-        const ultimo = arr[arr. length - 1]
-    
+        let ultimo = arr[arr. length - 1]
+        
+        i=parseInt(ultimo[0])
         if (i=="") {
             I=I+1
         }
-        i=parseInt(ultimo[0])
-        I=i+1
+        if (i<I+1) {
+            I=I+1
+        }
 
         let registro=([`${I};${Nome};${Matricula};${Idade};${Nota}`])    
         let texto="\n"+registro
