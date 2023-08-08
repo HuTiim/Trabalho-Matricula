@@ -15,15 +15,16 @@ function Cadastrar() {
         res=imp.split("\n")
         const arr =res
         let ultimo = arr[arr. length - 1]
+        ultimo=ultimo.split(";")
         
         i=parseInt(ultimo[0])
-        if (i=="") {
-            I=I+1
+        if (res==res[2]) {
+            I=1
         }
-        if (i<I+1) {
-            I=I+1
+        if (res>res[2]) {
+            I=i+1
         }
-
+        
         let registro=([`${I};${Nome};${Matricula};${Idade};${Nota}`])    
         let texto="\n"+registro
 
