@@ -1,4 +1,1 @@
-let s = "o rato roeu a roupa do rei de roma"
-
-let res=  s.split("\n")
-console.log(res[8])
+let s = [1,2,3,4,5]
