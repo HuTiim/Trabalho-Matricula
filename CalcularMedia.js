@@ -11,8 +11,9 @@ function media(){
            soma = soma + parseFloat(z[4]) 
     }
 
-    let media = soma / (l.length - 2)
-    return media 
+    let resultado = parseFloat(soma / (l.length - 2))
+    console.log(resultado)
+    return resultado
 }
 
-media()
+exports.fmed=media
