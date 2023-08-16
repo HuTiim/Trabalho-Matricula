@@ -20,4 +20,4 @@ function excluir(){
         }
     }
 }
-excluir()
+exports.fexclu=excluir
