@@ -16,4 +16,4 @@ const SENSACHOCRIVELREAD= require("fs").readFileSync
             }
 
 
-Listar()
+exports.fListar=Listar

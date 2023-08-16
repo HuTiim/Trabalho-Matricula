@@ -1,3 +1,5 @@
+const { join } = require("path");
+
 const SENSACHOCRIVELREAD= require("fs").readFileSync
 const SENSACHOCRIVEL=require ('readline-sync').question;
 const SENSACHOCRIVELWRITE= require("fs").writeFileSync
@@ -22,12 +24,13 @@ const SENSACHOCRIVELWRITE= require("fs").writeFileSync
                     z[2]=Matricula
                     z[3]=Idade
                     z[4]=Nota
+                    let registro=`${z[0]};${z[1]};${z[2]};${z[3]};${z[4]}`                        
+                    s[i]=registro
+                    let Atualizado=(s.join('\n'));
+                    SENSACHOCRIVELWRITE("BancoDeDados.csv",Atualizado.toString(),{flag:"w"})
 
-                    let registro=([`${z[0]};${z[1]};${z[2]};${z[3]};${z[4]}`])    
-                    let texto="\n"+registro
 
-                    SENSACHOCRIVELWRITE("BancoDeDados.csv",texto.toString(),{flag:"a"})
                 }
                 }
 }
-Atualizar()
+exports.fatualizar=Atualizar
