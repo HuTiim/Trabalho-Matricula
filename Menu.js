@@ -32,10 +32,9 @@ let n=(parseInt(SENSACHOCRIVEL("Digite o que deseja:")))
         return n
       }
       else if(n==0){
-        break
+        return n
       }
-      else{
-      }       
+
 }
 }
-menu()
+exports.fmenu=menu
