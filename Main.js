@@ -1,6 +1,3 @@
-const SENSACHOCRIVELWRITE= require("fs").writeFileSync
-const SENSACHOCRIVELREAD= require("fs").readFileSync
-const SENSACHOCRIVEL=require ('readline-sync').question;
 
 let impCadastro=require("./CadastroAluno.js").fcadastro
 let impMenu=require("./Menu.js").fmenu
