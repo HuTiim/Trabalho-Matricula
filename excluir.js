@@ -15,9 +15,9 @@ function excluir(){
         let excluido=(q.join("\n"))
         SENSACHOCRIVELWRITE("BancoDeDados.csv",excluido.toString(), {flag: "w"});
         }
-        if(controle==1){
-            console.log("Aluno nao encontrado")
-        }
+    }
+    if(controle==1){
+        console.log("Aluno nao encontrado")
     }
 }
 exports.fexclu=excluir
