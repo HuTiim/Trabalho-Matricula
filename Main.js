@@ -29,6 +29,9 @@ let impMedia=require("./CalcularMedia.js").fmed
             if (Vmenu==6) {
                VCmed=impMedia()   
             }
+            if (Vmenu==0) {
+               break
+            }
          }
          }
       main()

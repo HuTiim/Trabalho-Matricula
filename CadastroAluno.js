@@ -8,7 +8,7 @@ const SENSACHOCRIVEL=require ('readline-sync').question;
                 Nome=SENSACHOCRIVEL("Nome:")
                 Matricula=SENSACHOCRIVEL("Matricula:")
                 parseInt(Idade=SENSACHOCRIVEL("Idade:"))
-                parseInt(Nota=SENSACHOCRIVEL("Nota:"))
+                parseFloat(Nota=SENSACHOCRIVEL("Nota:"))
                 
                 let imp=SENSACHOCRIVELREAD("BancoDeDados.csv",{encoding: "utf-8"})
 

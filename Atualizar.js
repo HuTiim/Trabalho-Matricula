@@ -28,9 +28,10 @@ const SENSACHOCRIVELWRITE= require("fs").writeFileSync
                     s[i]=registro
                     let Atualizado=(s.join('\n'));
                     SENSACHOCRIVELWRITE("BancoDeDados.csv",Atualizado.toString(),{flag:"w"})
-
-
                 }
-                }
+            }
+            if (controle==1) {
+                console.log("Aluno nao encontrado")
+            }
 }
 exports.fatualizar=Atualizar
