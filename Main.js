@@ -8,25 +8,27 @@ let impExcluir=require("./excluir.js").fexclu
 let impMedia=require("./CalcularMedia.js").fmed
 
 
-function main() {
-   Vmenu=impMenu()     
-   if (Vmenu==1) {
-   Vcada=impCadastro()
-   }   
-   if (Vmenu==2) {
-   Vlista=impListar() 
-   }
-   if (Vmenu==3) {
-   VLesp=impLespecifico() 
-   }
-   if (Vmenu==4) {
-   VAtu=impAtualizar() 
-   }
-   if (Vmenu==5) {
-   VExc=impExcluir()   
-   }
-   if (Vmenu==6) {
-   VCmed=impMedia()   
-   }
-}
-main()
+      function main() {
+         while (true) {
+            Vmenu=impMenu()     
+            if (Vmenu==1) {
+               Vcada=impCadastro()
+            }   
+            if (Vmenu==2) {
+               Vlista=impListar() 
+            }
+            if (Vmenu==3) {
+               VLesp=impLespecifico() 
+            }
+            if (Vmenu==4) {
+               VAtu=impAtualizar() 
+            }
+            if (Vmenu==5) {
+               VExc=impExcluir()   
+            }
+            if (Vmenu==6) {
+               VCmed=impMedia()   
+            }
+         }
+         }
+      main()

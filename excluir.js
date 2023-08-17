@@ -17,7 +17,6 @@ function excluir(){
         }
         if(controle==1){
             console.log("Aluno nao encontrado")
-            break
         }
     }
 }

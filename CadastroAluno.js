@@ -31,7 +31,6 @@ const SENSACHOCRIVEL=require ('readline-sync').question;
                 SENSACHOCRIVELWRITE("BancoDeDados.csv",texto.toString(),{flag:"a"})
 
                 n=parseInt(SENSACHOCRIVEL("1 p/ Novo Cadastro 2 p/parar:"))
-                
                 if (n!=1) {
                     break
                 }
