@@ -25,7 +25,7 @@ const SENSACHOCRIVEL=require ('readline-sync').question;
                     I=i+1
                 }
                 
-                let registro=([`${I};${Nome};${Matricula};${Idade};${Nota}`])    
+                let registro=`${I};${Nome};${Matricula};${Idade};${Nota}`   
                 let texto="\n"+registro
 
                 SENSACHOCRIVELWRITE("BancoDeDados.csv",texto.toString(),{flag:"a"})

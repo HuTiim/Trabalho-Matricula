@@ -1,11 +1,11 @@
 
-let impCadastro=require("./CadastroAluno.js").fcadastro
-let impMenu=require("./Menu.js").fmenu
-let impListar=require("./ListaAlunos.js").fListar
-let impLespecifico=require("./ListarEspecífico.js").flesp
-let impAtualizar=require("./Atualizar.js").fatualizar
-let impExcluir=require("./excluir.js").fexclu
-let impMedia=require("./CalcularMedia.js").fmed
+const impCadastro=require("./CadastroAluno.js").fcadastro
+const impMenu=require("./Menu.js").fmenu
+const impListar=require("./ListaAlunos.js").fListar
+const impLespecifico=require("./ListarEspecífico.js").flesp
+const impAtualizar=require("./Atualizar.js").fatualizar
+const impExcluir=require("./excluir.js").fexclu
+const impMedia=require("./CalcularMedia.js").fmed
 
 
       function main() {
